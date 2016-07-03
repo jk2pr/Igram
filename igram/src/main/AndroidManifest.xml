@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.jk.igram">
+    package="org.lib.jk.igram">
 
-    <application android:allowBackup="true"
+    <application
+        android:allowBackup="true"
         android:label="@string/app_name"
-        android:supportsRtl="true"
->
-
+        android:supportsRtl="true">
+        <activity android:name="org.jk.igram.activities.InstagramWebActivity" />
     </application>
 
 </manifest>
