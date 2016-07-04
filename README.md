@@ -4,23 +4,24 @@ This repository contain Project having implementation of instagram integration.
 
 versionName "1.0"
 
-#How to use :
+**#How to use :**
  
- 1. user igram as library in your project
- 2. Add following dependencies in your project
+  user igram as library in your project
+  Add following dependencies in your project
  
- {
+        {
  
 		 compile project(':igram')
  
- }
+        }
+ **Steps**
  
  1. Create object of InstagramUtils class using CLIENT_ID,CLIENT_SECRET_ID and CALLBACK.
  2. set UserInfoCallback listner
  
-    mApp = new InstagramUtils(this, CLIENT_ID,
+         mApp = new InstagramUtils(this, CLIENT_ID,
                 "CLIENT_SECRET_ID", CALL_BACK_URL);
-        mApp.setListener(new InstagramUtils.UserInfoCallBack() {
+          mApp.setListener(new InstagramUtils.UserInfoCallBack() {
             @Override
             public void onInfoLoad(UserInfo mInfo) {
 
