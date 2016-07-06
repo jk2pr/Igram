@@ -11,7 +11,7 @@ versionName "1.0"
  
         {
  
-		 compile project(':igram')
+		compile 'org.jk.igram:igram:1.0'
  
         }
  **Steps**

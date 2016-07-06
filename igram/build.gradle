@@ -1,9 +1,30 @@
 apply plugin: 'com.android.library'
-ext{
-    PUBLISH_GROUP_ID='org.jk.igram'
-    PUBLISH_ARTIFACT_ID='igram'
-    PUBLISH_VERSION='1.0'
+
+
+
+ext {
+    // Where you will see your artifact in Bintray's web interface
+    // The "bintrayName" should match the name of the Bintray repro.
+    bintrayRepo = 'maven'
+    bintrayName = 'instagram-help'
+
+    // Maven metadata
+    publishedGroupId = 'org.jk.igram'
+    libraryName = 'Igram'
+    // Save yourself a head ache, and set this equal to the name of the Android Studio library
+    // module. The artifact name needs to match the name of the library.
+    artifact = 'igram'
+
+    libraryDescription = 'instagram integration'
+    libraryVersion = '1.0'
+
+    developerId = 'jk2pr'
+    developerName = 'Jitendra'
+    developerEmail = 'jk2praj@gmail.com'
 }
+
+
+
 android {
     compileSdkVersion 23
     buildToolsVersion "24.0.0"
@@ -25,17 +46,18 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:23.4.0'
     testCompile 'junit:junit:4.12'
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
     androidTestCompile 'com.android.support.test:runner:0.5'
     androidTestCompile 'com.android.support:support-annotations:23.4.0'
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.android.support:design:23.0.1'
-    compile 'com.android.support:recyclerview-v7:23.1.1'
 
-    compile 'com.squareup.picasso:picasso:2.5.2'
+
+
 
 
 
 }
+apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/attwellBrian/JCenter/master/bintrayv1.gradle'

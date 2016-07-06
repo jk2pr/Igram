@@ -23,7 +23,9 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
-    private final String CLIENT_ID = "43ef4ede2335453fa73067588ab09fe0";
+    private final String CLIENT_ID = "";
+    private final String SECRET_ID = "";
+    private final String CALL_BACK_URL = "";
     private InstagramUtils mApp;
 
     @Override
@@ -56,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startInstagramLogin() {
         mApp = new InstagramUtils(this, CLIENT_ID,
-                "bf94790f6a3b49359f9442a5650c06c9", "http://xavient.com");
+                SECRET_ID, CALL_BACK_URL);
         mApp.setListener(new InstagramUtils.UserInfoCallBack() {
             @Override
             public void onInfoLoad(UserInfo mInfo) {
