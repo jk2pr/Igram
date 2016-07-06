@@ -17,3 +17,5 @@ igram/src/main/res/drawable/
 /gradle/
 /build/
 /app/app.iml
+/igram/build/
+/.idea/
