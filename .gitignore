@@ -1,8 +1,6 @@
 *.iml
 .gradle
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
 .DS_Store
 /build
 /captures
@@ -16,6 +14,5 @@ igram/libs/
 igram/src/main/res/drawable/
 /gradle/
 /build/
-/app/app.iml
 /igram/build/
 /.idea/
